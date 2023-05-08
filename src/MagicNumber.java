@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MagicNumber {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
-        System.out.println("Enter n");
+        System.out.println("Enter value of n");
         int n=in.nextInt();
         int base=5;
         int ans=0;
