@@ -8,7 +8,7 @@ public class Swap {
         for(int i=0;i<=5;i++){
             arr[i]=in.nextInt();
         }
-        swap(arr,1,3);
+        swap(arr,1,3);//indexes of your choice
         System.out.println(Arrays.toString(arr));
     }
     static void swap(int[] arr,int index1,int index2){
