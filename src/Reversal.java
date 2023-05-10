@@ -11,7 +11,7 @@ public class Reversal {
         int start=0;
         int end=arr.length-1;
         while(end>start){
-            //swapping
+            //swapping...
             swap(arr,start,end);
             start++;
             end--;
