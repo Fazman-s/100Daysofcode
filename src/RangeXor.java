@@ -8,6 +8,13 @@ public class RangeXor {
         System.out.println("xor from 0 to b = "+xor(b));
         System.out.println("xor a-1 = "+xor(a-1));
         System.out.println("xor from a to b = "+ans);
+
+        //brute force method and which might give time limit exceed for huge numbers
+        int ans2=0;
+        for(int i=a;i<=b;i++){
+            ans2 ^= i;
+        }
+        System.out.println("using check/brute force xor from a to b = "+ans2);
     }
     //this give xor from 0 to a
     static int xor(int a){
