@@ -15,6 +15,6 @@ public class SetBits {
             count++;
 
         }
-        return count;   //will return count=1 for the above example
+        return count;   //will return count=1 for the above example.
     }
 }
