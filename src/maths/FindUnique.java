@@ -1,4 +1,4 @@
-/*find unique element in array  or
+package maths;/*find unique element in array  or
 * given a array of numbers in which every num appears twice and only one num appears once. find that num*/
 
 
