@@ -13,15 +13,29 @@ Expected output
 
 public class affixzeroes {
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        int n=in.nextInt();
-        int m=in.nextInt();
+        Scanner in = new Scanner(System.in);
+       /* int n = in.nextInt();
+        int m = in.nextInt();
 
-        for(int i=n;i<=m;i++){
+         for(int i=n;i<=m;i++){
             System.out.print("0"+n+" ");
-            n++;
+           n++;
+         }  */
+
+        // optimized code without any errors
+
+
+        int low = in.nextInt();
+        int up = in.nextInt();
+        for (int i = low; i <= up; i++) {
+            if (up >= 100)
+                System.out.printf("%03d ", i);
+            else if (up >= 10)
+                System.out.printf("%02d ", i);
+            else
+                System.out.printf("%d ", i);
         }
+
+
     }
-
-
 }
