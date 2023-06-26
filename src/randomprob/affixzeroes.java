@@ -21,6 +21,7 @@ public class affixzeroes {
             System.out.print("0"+n+" ");
            n++;
          }  */
+        // OR
 
         // optimized code without any errors
 
