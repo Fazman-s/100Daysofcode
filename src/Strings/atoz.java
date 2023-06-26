@@ -10,6 +10,8 @@ public class atoz {
 
         }
         System.out.println(series);
+        String x= series.toUpperCase();
+        System.out.println(x);
 
     }
 }
