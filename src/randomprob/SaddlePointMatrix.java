@@ -24,13 +24,11 @@ public class SaddlePointMatrix {
             // the maximum element of column or not
             int k;
             for (k = 0; k < n; k++)
-
                 // Note that col_ind is fixed
                 if (min_row < mat[k][col_ind])
                     break;
 
-            // If saddle point is present in this row then
-            // print it
+            // If saddle point is present in this row then print it
             if (k == n)
             {
                 System.out.println("Value of Saddle Point " + min_row);
