@@ -9,9 +9,6 @@ public class ValidAnagram {
         String s2=in.nextLine();
 
         System.out.println(isAnagram(s1,s2));
-
-
-
     }
     public static boolean isAnagram(String s1,String s2){
         if(s1.length()!=s2.length()) return false;
