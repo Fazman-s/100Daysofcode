@@ -2,25 +2,24 @@ package patterns;
 
 /*
 
-
-55555 44444 33333 22222 11111
-5555 4444 3333 2222 1111
-555 444 333 222 111
-55 44 33 22 11
-5 4 3 2 1
+11111 22222 33333 44444 55555
+1111 2222 3333 4444 5555
+111 222 333 444 555
+11 22 33 44 55
+1 2 3 4 5
 
 
 
  */
-public class pattern14{
+public class pattern15{
     public static void main(String[] args) {
         pattern(5);
     }
 
     public static void pattern(int n){
-        for(int i=1;i<n;i++){
-            for(int j=n;j>0;j--){
-                for(int k=i;k<n;k++){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                for(int k=i;k<=n;k++){
                     System.out.print(j);
                 }
                 System.out.print(" ");
