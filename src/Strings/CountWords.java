@@ -15,5 +15,6 @@ public class CountWords {
         }
         String[] words = str.split(" +");
         return words.length;
+
     }
 }
