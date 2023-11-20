@@ -10,11 +10,15 @@ public class CountWords {
     }
 
     public static int countwords(String str){
+        int count=0;
         if (str == null || str.isEmpty()) {
             return 0;
         }
         String[] words = str.split(" +");
-        return words.length;
+        for(int i=0;i<words.length;i++){
+            count++;
+        }
+        return count;
 
     }
 }
