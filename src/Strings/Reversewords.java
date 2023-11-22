@@ -9,18 +9,16 @@ public class Reversewords {
 
         String[] words=s.trim().split(" +");   //trims begining and end spaces -- splits trimmed words into array of words
         //based on spaces btw -" +"  --one or more spaces
-
-        // Initialize the output string
-        String out = "";
-
-        // Iterate through the words in reverse order
-        for (int i = words.length - 1; i > 0; i--) {
-            // Append the current word and a space to the output
-            out += words[i] + " ";
+        int i=0,j=words.length-1;
+        while(i<j) {
+            String t = words[i];
+            words[i] = words[j];
+            words[j] = t;
+            i++;
+            j--;
         }
+        System.out.println(String.join(" ", words));
 
-        // Append the first word to the output (without trailing space)
-        System.out.println(out + words[0]);
 
 
 
