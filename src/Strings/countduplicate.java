@@ -3,15 +3,12 @@ package Strings;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
 public class countduplicate {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
         String s=in.nextLine();
         countdub(s);
-
-
     }
 
     public static void countdub(String s){
@@ -19,7 +16,7 @@ public class countduplicate {
          String[] words = s.toLowerCase().split(" +");
 
         // Creating one HashMap with words as key and their count as value
-        HashMap< String, Integer > wordCount = new HashMap< String, Integer >();
+        HashMap< String, Integer > wordCount = new HashMap<>();
 
         // Checking each word
         for (String word: words) {
