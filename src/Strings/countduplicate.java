@@ -33,20 +33,18 @@ public class countduplicate {
                 wordCount.put(word, 1);
             }
         }
+        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+            String word = entry.getKey();
+            int count = entry.getValue();
 
-        // Extracting all keys of wordCount
-        final Set< String > wordsInString = wordCount.keySet();
-
-        // Iterating through all words in wordCount
-
-        for (String word: wordsInString) {
-            // if word count is greater than 1
-
-            if (wordCount.get(word) > 1) {
-                // Printing that word and it's count
-                System.out.println(word + " : " + wordCount.get(word));
+            if (count > 1) {
+                System.out.println(word + " : " + count);
             }
         }
+
+
+
+
 
     }
 
